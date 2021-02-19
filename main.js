@@ -1,10 +1,20 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
-
-
-
-
+const moreThan5 = num => num > 5
+const isNewTopScore = (score, topScore) => score > topScore
+const isInDanger = grade => grade >= 60 && grade <= 71
+const isCoasting = grade => grade >= 72 && grade <= 83
+const isSucceeding = grade => grade >= 84 && grade <= 92
+const isFailing = grade => grade < 60
+const isAcing = grade => grade > 92
+const isStudent = role => role === 'student'
+const isTeacher = role => role === 'teacher'
+const isAdmin = role => role === 'admin'
+const isElementary = level => level === 'elementary'
+const areDifferentPeople = (person1, person2) => person1 !== person2
+const isMiddleSchoolTeacher = (role, level) => (role === 'teacher') && (level >= 6 && level <= 8)
+const notAnElementarySchoolAdministrator = (level,role) => role !== 'admin' || level !== 'elementary'
 
 /********************************************************************************************
  * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
